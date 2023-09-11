@@ -1,10 +1,56 @@
-.App {
-  text-align: center;
+main {
+  background-color: ivory;
+  display: flex;
 }
-
+main .node-list {
+  min-width: 50%;
+  margin: 2%;
+}
+main h3 {
+  margin: 0;
+  font-size: 20px;
+}
+main tr {
+  background: #69cbe1;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  height: 60px;
+  margin: 10px 0;
+  display: block;
+  transition: 0.3s;
+}
+main tr:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+main table {
+  width: 100%;
+}
+main tr td {
+  width: 30%;
+  display: block;
+  float: left;
+  margin: 1%;
+}
+.create-node-form {
+  align-content: center;
+  margin: 50px 0 0 100px;
+  padding-bottom: 50px;
+  border: 2px solid;
+  background: burlywood;
+  height: 200px;
+  margin-top: 10%;
+  width: 20%;
+}
+.create-node-form h4,
+.create-node-form form {
+  margin: 20px;
+}
+main textarea {
+  width: 80%;
+  height: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +61,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
